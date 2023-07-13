@@ -16,14 +16,16 @@ sap.ui.define([
 		name: "com.myorg.library",
 		version: "${version}",
 		dependencies: [ // keep in sync with the ui5.yaml and .library files
-			"sap.ui.core"
+			"sap.ui.core",
+			"sap.m"
 		],
 		types: [
 			"com.myorg.library.ExampleColor"
 		],
 		interfaces: [],
 		controls: [
-			"com.myorg.library.Example"
+			"com.myorg.library.Example",
+			"com.myorg.library.FunkyInput"
 		],
 		elements: [],
 		noLibraryCSS: false // if no CSS is provided, you can disable the library.css load here
