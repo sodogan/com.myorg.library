@@ -1,0 +1,231 @@
+/* removes the title bar.. */
+.zagCalendar div[id$="-HeaderToolbar"] {
+	display: none;	
+}
+/* hides the 'now' vertical line.. */
+.zagCalendar .sapUiCalendarRowNow {
+	display: none;
+}
+/* team members row alignments.. */
+.zagCalendar .sapMPlanCal .sapMPlanCalRowHead .sapMLIBContent {
+	height: 100%;
+}
+.sap-phone .zagCalendar .sapMListItems .sapMListTblRow {
+	height: 1.5rem;
+}
+.zagCalendar .sapMListTblCell.sapMPlanCalRowHead {
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 0.0625rem;
+}
+.sap-phone .zagCalendar .sapMListItems .sapMPlanCalRowHead > div[id$="-Head"] {
+	height: 1.5rem;
+}
+/* calendar appointments thead */
+.sap-phone .zagCalendar table > thead {
+	height: 1px;
+}
+/* small appoint block, centralize.. */
+.zagCalendar div[class*="sapUiCalendarAppType"] {
+	margin-top: 0.1rem !important;
+}
+.zagCalendar .zagUiCalendarRowAppointment .sapUiCalendarRowApps {
+	overflow-y: hidden;
+}
+.sap-phone .zagCalendar .sapUiCalendarRowApps .zagSmallAppointment {
+	height: 1.75rem;
+}
+.sap-phone .zagCalendar .sapUiCalendarRowApps .sapUiCalendarAppContainerRight .zagSmallAppointment {
+	height: 3rem !important;
+}
+.sap-phone .zagCalendar .sapUiCalendarAppDummy {
+	height: 1.75rem;
+}
+/* info line on appointments.. */
+.zagCalendar .sapUiCalendarAppText {
+	padding: 0.2rem;
+    white-space: normal;
+}
+.sap-phone .zagCalendar .sapUiCalendarAppText {
+	font-size: 0.55rem;
+}
+.sap-phone .zagCalendar .sapUiCalendarAppTitle {
+	padding-top: 0;
+}
+.sap-phone .zagCalendar .sapUiCalendarApp.sapUiCalendarAppTitleOnly {
+	line-height: 1.70rem;
+}
+/* row header, job title */
+.zagCalendar .sapMLIBContent .sapMSLIDiv {
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 0.4rem;
+}
+.sap-phone .zagCalendar .sapMListTblRow {
+	height: 1.5rem;
+}
+.sap-phone .zagCalendar .sapMSLI {
+	height: 1.5rem;
+}
+.sap-tablet .zagCalendar .sapMLIBContent .sapMSLIDiv {
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 0.4rem;
+}
+.sap-tablet:not(.sapUiMedia-StdExt-Desktop) .zagCalendar .sapMListTblRow {
+	height: 2rem;
+}
+.sap-tablet:not(.sapUiMedia-StdExt-Desktop) .zagCalendar .sapMSLI {
+	height: 2rem;
+}
+.zagCalendar .sapMSLITitle, .zagCalendar .sapMSLIDescription {
+	white-space: normal;
+	text-align: center;
+}
+/* week number, week view */
+.zagCalendar .sapUiCalRowWeekNumbers {
+	display: none;
+}
+/* thead, week view */
+.zagCalendar .sapMListTbl.sapMListUl > thead {
+	visibility: hidden !important;
+}
+/* small badges, month view */
+.zagCalendar .sapUiCalMonthView .sapUiCalItem {
+	height: 3rem;
+}
+.zagCalendar .sapUiCalMonthView .sapUiCalItemText {
+    float: left;
+	vertical-align: top;
+	padding-left: 1.25rem;
+    line-height: 1.5rem;
+}
+.zagCalendar .zagOneMonthDayWithAppointment {
+    position: relative;
+	top: 1.25rem;
+    margin: 0.4rem;
+    pointer-events: none;
+}
+.zagCalendar .zagOneMonthDayWithAppointment .zagOneMonthAppointment {
+    height: 0.4rem;
+    margin-bottom: 0.1rem;
+	border-radius: 0.1rem;
+}
+/* month view, desktop */
+.sapUiSizeCozy .zagCalendar .sapUiCalendarApp {
+    min-width: unset;
+}
+
+/* colors for special days */
+.sapUiCalItemType09 > .sapUiCalItemText {
+	box-shadow: inset 0 -0.25rem 0 #fabd64;
+}
+.sapUiCalItemType09.sapUiCalItemSel > .sapUiCalItemText {
+	box-shadow: inset 0 -0.25rem 0 #fabd64, inset 0 -0.33rem #ffffff;
+}
+.sapUiCalItemType09.sapUiCalItemNow > .sapUiCalItemText {
+	box-shadow: inset 0.0625rem 0.0625rem 0 0 #ffffff, inset -0.0625rem -0.0625rem 0 0 #ffffff, inset 0 -0.1875rem 0 #fabd64;
+}
+.sapUiCalItemType09.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+	box-shadow: inset 0.0625rem 0.0625rem 0 0 #ffffff, inset -0.0625rem -0.0625rem 0 0 #ffffff, inset 0 -0.1875rem 0 #fabd64, inset 0 -0.25rem #ffffff;
+}
+.sapUiCalItemType10 > .sapUiCalItemText {
+	box-shadow: inset 0 -0.25rem 0 #91c8f6;
+}
+.sapUiCalItemType10.sapUiCalItemSel > .sapUiCalItemText {
+	box-shadow: inset 0 -0.25rem 0 #91c8f6, inset 0 -0.33rem #ffffff;
+}
+.sapUiCalItemType10.sapUiCalItemNow > .sapUiCalItemText {
+	box-shadow: inset 0.0625rem 0.0625rem 0 0 #ffffff, inset -0.0625rem -0.0625rem 0 0 #ffffff, inset 0 -0.1875rem 0 #91c8f6;
+}
+.sapUiCalItemType10.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+	box-shadow: inset 0.0625rem 0.0625rem 0 0 #ffffff, inset -0.0625rem -0.0625rem 0 0 #ffffff, inset 0 -0.1875rem 0 #91c8f6, inset 0 -0.25rem #ffffff;
+}
+.sapUiCalItemType11 > .sapUiCalItemText {
+	box-shadow: inset 0 -0.25rem 0 #abe2ab;
+}
+.sapUiCalItemType11.sapUiCalItemSel > .sapUiCalItemText {
+	box-shadow: inset 0 -0.25rem 0 #abe2ab, inset 0 -0.33rem #ffffff;
+}
+.sapUiCalItemType11.sapUiCalItemNow > .sapUiCalItemText {
+	box-shadow: inset 0.0625rem 0.0625rem 0 0 #ffffff, inset -0.0625rem -0.0625rem 0 0 #ffffff, inset 0 -0.1875rem 0 #abe2ab;
+}
+.sapUiCalItemType11.sapUiCalItemSel.sapUiCalItemNow > .sapUiCalItemText {
+	box-shadow: inset 0.0625rem 0.0625rem 0 0 #ffffff, inset -0.0625rem -0.0625rem 0 0 #ffffff, inset 0 -0.1875rem 0 #abe2ab, inset 0 -0.25rem #ffffff;
+}
+
+.zagOneMonthAppointmentType01 {
+	background: #e09d00;
+}
+.zagOneMonthAppointmentType02 {
+	background: #e6600d;
+}
+.zagOneMonthAppointmentType03 {
+	background: #c14646;
+}
+.zagOneMonthAppointmentType04 {
+	background: #853808;
+}
+.zagOneMonthAppointmentType05 {
+	background: #ab218e;
+}
+.zagOneMonthAppointmentType06 {
+	background: #0092d1;
+}
+.zagOneMonthAppointmentType07 {
+	background: #1a9898;
+}
+.zagOneMonthAppointmentType08 {
+	background: #759421;
+}
+.sapUiCalLegDayType09 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor, .zagOneMonthAppointmentType09 {
+	background: #fabd64;
+}
+.sapUiCalLegDayType10 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor, .zagOneMonthAppointmentType10 {
+	background: #91c8f6;
+}
+.sapUiCalLegDayType11 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor, .zagOneMonthAppointmentType11 {
+	background: #abe2ab;
+}
+
+.sapUiCalendarAppType09.sapUiCalendarApp, .sapUiCalendarAppType09.sapUiCalendarApp:active {
+	border-left-color: #fabd64;
+}
+.sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType09.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
+	background-color: #fabd6420;
+}
+.sapUiCalendarRowAppsIntHeadType09.sapUiCalendarRowAppsIntHead {
+	background-color: #fabd6420;
+}
+.sapUiCalendarRowAppsIntHeadType09.sapUiCalendarRowAppsIntHeadFirst {
+  	border-left-color: #fabd64;
+}
+.sapUiCalendarAppType10.sapUiCalendarApp, .sapUiCalendarAppType10.sapUiCalendarApp:active {
+	border-left-color: #91c8f6;
+}
+.sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType10.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
+	background-color: #91c8f620;
+}
+.sapUiCalendarRowAppsIntHeadType10.sapUiCalendarRowAppsIntHead {
+	background-color: #91c8f620;
+}
+.sapUiCalendarRowAppsIntHeadType10.sapUiCalendarRowAppsIntHeadFirst {
+  	border-left-color: #91c8f6;
+}
+.sapUiCalendarAppType11.sapUiCalendarApp, .sapUiCalendarAppType11.sapUiCalendarApp:active {
+	border-left-color: #abe2ab;
+}
+.sapUiCalendarRowVisFilled > .sapUiCalendarRowApps > .sapUiCalendarAppType11.sapUiCalendarApp:not(.sapUiCalendarAppSel) > .sapUiCalendarAppCont {
+	background-color: #abe2ab20;
+}
+.sapUiCalendarRowAppsIntHeadType11.sapUiCalendarRowAppsIntHead {
+	background-color: #abe2ab20;
+}
+.sapUiCalendarRowAppsIntHeadType11.sapUiCalendarRowAppsIntHeadFirst {
+  	border-left-color: #abe2ab;
+}
+
+/* to be removed, when wrong data in SAP HR is returned we display black.. */
+.sapUiCalLegDayType20 > .sapUiUnifiedLegendSquare > .sapUiUnifiedLegendSquareColor, .zagOneMonthAppointmentType20 {
+	background: #00000;
+}
